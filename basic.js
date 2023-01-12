@@ -100,3 +100,28 @@ function welcomeToBooleans() {
       }
       
       testGreaterOrEqual(10);
+     
+      
+      
+      const myArray = [50, 60, 70];
+const myData = myArray[0];
+const myArray = [];
+
+let i=5;
+while(i>=0){
+myArray.push(i);
+i--;
+}
+_____10________________________________________________________________
+const myArray = [];
+for (let i=1; i < 6; i++){
+  myArray.push(i);
+}
+
+
+const myArray = [];
+for (let i=9; i > 0; i -= 1){
+    myArray.push(i);
+  }
+  console.log(myArray);
+
