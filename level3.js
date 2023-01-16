@@ -49,3 +49,68 @@ for(let i = 0; i <array.length; i++){
 
 }
 console.log(newArray);
+
+
+let bigArr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for(let i = bigArr.length - 1; i >= 0; i--){
+   console.log(bigArr[i]);
+   for(let j = bigArr[i].length -1; j >= 0; j--){
+      console.log(bigArr[i][j]);
+   }
+}
+let firstArray = [];
+let extctr = 9;
+for(let i = 0; i < 3; i++){
+   let smallArr = [];
+   for(let j =0; j <3; j++){
+      smallArr.push(extctr);
+      extctr--;
+
+   }
+   firstArray.push(smallArr);
+}
+console.log(firstArray);
+
+function number(a, b){
+   console.log(a * b);
+}
+number(2, 2);
+
+function stud(id){
+console.log("hello", id);
+}
+stud("fatema");
+
+function sum(arr){
+   let output = [];
+   for(let i = 0; i < arr.length; i++){
+      output.push(arr[i] * 5);
+   }
+   return output;
+}
+let result = sum([4, 5, 6, 7, 8]);
+console.log(result);
+
+function ariyan(arr){
+   let outcome = [];
+   for(let i = arr.length - 1; i >= 0; i--){
+if(arr[i] === 1){
+   outcome.push("one")
+}
+if(arr[i] === 2){
+   outcome.push("two")
+}
+if(arr[i] === 3){
+   outcome.push("three")
+}
+if(arr[i] === 4){
+   outcome.push("four")
+}
+
+   }
+   return outcome;
+}
+let refund = ariyan([1, 2, 3, 4])
+let record = ariyan([1, 2, 1, 2])
+console.log(refund);
+console.log(record);
